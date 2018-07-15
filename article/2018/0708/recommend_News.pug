@@ -1,0 +1,117 @@
+extends ../../../_layout.pug
+
+block var_article
+    - var main_id  = 'id20180708_v2'
+    - var category = 'design - web - app'
+    - var article_keywords = 'News,Blog,Recommend,Select,Web Design'
+    - var article_description = 'Carefully Selected Recommend Web Design / App Design - News/Blog - 厳選オススメ♪'
+
+    //- .article_title
+    - var en  = 'News & Blog'
+    - var jp  = 'Web/アプリデザイン<br>オススメ ニュースブログ♪'
+    - var date = '2018.07.08'
+
+block article_detail_css
+    +css_article_detail_link(hierarchy)  
+
+block article_detail
+  article.detail
+
+    #buttons 
+      button(class="btn active" id="ALL" value="ALL" data-filter_id="ALL") ALL
+      button(class="btn" id="JP" value="JP" data-filter_id="JP") JP
+      button(class="btn" id="EN" value="EN" data-filter_id="EN") EN
+
+    ul#contents
+      li.JP
+        a(href="https://twitter.com/webdesignclip" target="_blank")
+          img(src='img/icon_webdesignclip.png')
+          
+      li.JP
+        a(href="https://sp.webdesignclip.com/" target="_blank")
+          img(src='img/icon_webdesignclip_S.png')
+
+      li.JP
+        a(href="https://lp.webdesignclip.com/" target="_blank")
+          img(src='img/icon_webdesignclip_L.png')
+            
+      li.JP
+        a(href="https://design.webclips.jp/" target="_blank")
+          img(src='img/icon_webclips.png')
+      
+      li.JP
+        a(href="https://webdesign-trends.net/" target="_blank")
+          img(src='img/icon_webdesigntrends.png')
+      
+      li.JP 
+        a(href="https://twitter.com/WPJ_news" target="_blank")
+          img(src='img/icon_wpj.png')
+          
+      li.JP
+        a(href="https://www.webcreatorbox.com/" target="_blank")
+          img(src='img/icon_webcreatorbox.png')
+          
+      li.JP 
+        a(href="http://uxmilk.jp/" target="_blank")
+          img(src='img/icon_uxmilk.png')
+          
+      li.JP 
+        a(href="https://www.nxworld.net/" target="_blank")
+          img(src='img/icon_nxworld.png')
+          
+      li.JP 
+        a(href="https://twitter.com/0310lan" target="_blank")
+          img(src='img/icon_masatoran.jpg')
+          
+      li.JP
+        a(href="https://webdesign-s.com/" target="_blank")
+          img(src='img/icon_webdesignsearch.png')
+          
+      li.JP
+        a(href="http://grids.qoopu.net/" target="_blank")
+          img.h2(src='img/icon_grids.png')
+
+      li.JP
+        a(href="https://twitter.com/tech_creator" target="_blank")
+          img(src='img/icon_technical-creator.png')
+          
+      li.JP 
+        a(href="https://ics.media/" target="_blank")
+          img.contain(src='img/icon_ics.png')
+          
+      li.JP 
+        a(href="https://twitter.com/moreworks" target="_blank")
+          img(src='img/icon_moreworks.png')
+
+      li.JP
+        a(href="https://goodpatch.com/blog/" target="_blank")
+          img(src='img/icon_goodpatch.png')
+
+      li.JP
+        a(href="https://wantedly.com/portfolio/projects" target="_blank")
+          img(src='img/icon_wantedly.png')
+
+      li.JP
+        a(href="https://twitter.com/WebyaInVan" target="_blank")
+          img(src='img/icon_WebyaInVan.png')
+
+      li.JP
+        a(href="https://twitter.com/frogagent" target="_blank")
+          img(src='img/icon_flog.png')
+
+      li.JP
+        a(href="http://sketchegg.blogspot.com/" target="_blank")
+          img(src='img/icon_sketch-tamago.png')
+
+      li.JP
+        a(href="https://twitter.com/yhassy" target="_blank")
+          img(src='img/icon_yasuhisa.jpg')
+          
+      li.JP
+        a(href="https://creive.me/" target="_blank")
+          img(src='img/icon_creive.png')
+
+
+    +jquery_link
+    +js_origin_scripts_link
+

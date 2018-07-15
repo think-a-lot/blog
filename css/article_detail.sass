@@ -1,0 +1,202 @@
+$ms_max_width : 969px
+$ms_min_width : 970px
+
+@media screen and (min-width: $ms_min_width)
+  height: 100vh
+
+a
+  color: #00efff
+
+#buttons 
+  display: block
+  margin: 1.5vh 10vw 5vh
+  button
+    margin: 0 0.8vw
+    display: inline-block
+    @media screen and (max-width: $ms_max_width)
+      margin: 1.5vw
+    position: relative
+    padding: 15px 20px
+    transition: .3s
+    color: #fff
+    border-radius: 5px
+    border: 1px solid #888
+    display: inline-block
+    line-height: 1 
+    font-size: 1.6em
+    font-weight: 100
+    background: #222
+    @media screen and (max-width: $ms_max_width)
+      font-size: 2vh
+      padding: 1.5vh  
+    &:focus
+      outline: none
+  .active
+    background: #fff
+    color: #222
+    //font-weight: bold
+    text-decoration: none
+
+
+//pug_code_refactoring.html
+#id20180702 
+  img
+    width: 100%
+    object-fit: contain
+  h3, .arrow
+    font-size: 2.5em
+  h3
+    margin-top: 1.5em
+
+    
+//recommend_News_v2.html
+#id20180708_v2
+  //ul#contents
+    display: grid
+    grid-auto-rows: 10vh
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr
+    grid-template-rows: repeat(100,10vh)
+    justify-content: center
+    grid-row-gap: 1vw
+    grid-column-gap: 0 //- 横
+    li
+      img
+        height: 100%
+  ul#contents
+    display: flex
+    flex-basis: auto
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: center
+    align-items: flex-start
+    align-content: space-around
+    //height: 100vh
+    &:hover
+      img
+        //opacity: 0.9
+    li
+      display: block
+      //position: relative
+      flex-grow: 0
+      flex-shrink: 1
+      flex-basis: auto
+      margin: 0.5vw
+      a
+        display: block
+      img
+        display: block
+        //transition: all .8s
+        height: 13vh
+        object-fit: cover
+        @media screen and (max-width: $ms_max_width)
+          height: 9.7vh
+      &:hover
+        img
+          //opacity: 1
+          
+
+//recommend_BGM_v2.html
+#id20180620_v2
+  .date
+    padding-bottom: 2.5em
+
+  article ul
+    display: grid
+    grid-auto-flow: dense
+    grid-template-columns: 50% 50%
+    grid-auto-rows: 15vh
+    justify-content: center
+    li
+      display: block
+      height: 100%
+      a
+        display: block
+        height: 100%
+        color: white
+        text-decoration: none
+      img
+        width: 100%
+        height: 100%
+        object-fit: cover
+      .time
+        position: relative
+        top: -1.7em
+        left: 8.5em
+        font-size: 3em
+        font-style: italic
+        color: #aaa
+        background: #000
+        opacity: 0.8
+        display: inline-block
+        width: 4.6em
+        border-radius: 3px 0 0 0
+        span
+          line-height: 1.7em
+          position: relative
+          top: 0.1em
+  @media screen and (min-width: $ms_min_width)
+      display: block
+      .en
+        padding-bottom: 0.3em
+      .jp
+        //display: none
+        //font-size: 1.3em
+        padding-bottom: 1em
+      .date
+        //font-size: 1.4em
+        padding-bottom: 2em
+      .category, .article_title
+        padding-left: 0
+      .category
+        padding-top: 10vmin
+      article.detail ul
+        grid-auto-rows: 30vh
+        grid-template-columns: 30% 30% 30%
+        li
+          .time
+            font-size: 1.2em
+            top: -1.9em
+            left: 15.6em
+            span
+              top: 0.06em
+
+              
+//
+#id20180506
+  article.detail
+    img
+      display: block
+      margin: 0 auto 3vh
+    img:nth-child(1)
+      width: 88vw
+      padding-bottom: 3em
+    img:nth-child(2)
+      width: 40vw
+      padding-bottom: 3em
+    q
+      font-size: 3em
+    @media screen and (min-width: $ms_min_width)
+      font-size: 0.5em
+      img:nth-child(1)
+        max-width: 40vw
+      img:nth-child(2)
+        max-width: 20vw
+
+#id20180523_01, #id20180523_02
+  img
+    width: 100vw
+  @media screen and (min-width: $ms_min_width)
+    grid-template-columns: 30% 50%
+    h2.category
+      font-size: 1.3vmin
+    article.detail
+      font-size: 0.8em
+      img:nth-child(1)
+        max-width: 58vw
+      
+#id20180523_02
+  background-color: #fff
+  color: #111
+  .site_title a
+    color: #111
+

@@ -1,0 +1,28 @@
+extends ../../../_layout.pug
+
+block var_article
+    - var main_id  = 'id20180702'
+    - var category = 'web - html'
+    - var article_keywords = 'Pug, how to make, smart, cording, 使い方, 方法, コーディング'
+    - var article_description = 'HTML Cording with Pug Code Refactoring / PugコードをよりスマートにリファクタリングしながらHTMLコーディングコードを公開 '
+    
+    //- .article_title
+    - var en  = 'Pug<br>how to smart<br>refactoring coding'
+    - var jp  = 'スマート リファクタリング<br>コーディング方法'
+    - var date = '2018.07.02'
+
+block article_detail_css
+    +css_article_detail_link(hierarchy)  
+
+block article_detail
+    article.detail
+        section
+            h3 ver 1
+            .img 
+                img(src="img/pug_code_v1.png" alt="pug_code_v1.png")
+        .arrow ↓
+        section
+            h3 ver 2
+            .img 
+                img(src="img/pug_code_v2.png" alt="pug_code_v2.png")
+            

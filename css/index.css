@@ -1,0 +1,91 @@
+@charset "UTF-8";
+/* PC・SP */
+@media screen and (max-width: 969px) {
+  .site_title {
+    padding: 5em 0 4.5em; } }
+main a {
+  color: #ddd;
+  text-decoration: none;
+  display: block;
+  height: 100%; }
+main ul {
+  position: relative; }
+  main ul::before, main ul::after {
+    content: "";
+    width: 20px;
+    height: 30px;
+    position: absolute;
+    display: inline-block;
+    width: 5vw;
+    height: 5vw; }
+  main ul::before {
+    top: 0;
+    left: 0; }
+  main ul::after {
+    bottom: 0;
+    right: 0; }
+  main ul li {
+    list-style: none;
+    display: block;
+    height: 100%; }
+    main ul li::before, main ul li::after {
+      content: "";
+      position: absolute;
+      width: 5vw;
+      height: 5vw; }
+@media screen and (max-width: 969px) {
+  main {
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-auto-rows: 50vw;
+    align-content: start;
+    justify-content: center;
+    font-size: 0.58vw;
+    margin-bottom: 30em; }
+    main ul:nth-of-type(4n+1), main ul:nth-of-type(4n) {
+      background-color: #fff;
+      -webkit-tap-highlight-color: #fff; }
+      main ul:nth-of-type(4n+1) a, main ul:nth-of-type(4n) a {
+        color: #555;
+        -webkit-tap-highlight-color: #555; }
+      main ul:nth-of-type(4n+1) .article_title .en, main ul:nth-of-type(4n) .article_title .en {
+        font-weight: 300; }
+    main .category {
+      padding-top: 7.5vw;
+      padding-bottom: 5vw; }
+    main .article_title .en {
+      padding-bottom: 3vw;
+      font-weight: 200; }
+    main .article_title .jp {
+      padding-bottom: 5vw; } }
+@media screen and (min-width: 970px) {
+  main {
+    display: grid;
+    grid-template-columns: 26vw 26vw 26vw;
+    grid-template-rows: 26vw 26vw;
+    align-content: start;
+    margin: 14vh 11vw 20vh 11vw;
+    font-size: 0.58vw;
+    height: 52.2vw; }
+    main ul:nth-of-type(2n+1) {
+      background-color: #fff; }
+      main ul:nth-of-type(2n+1) a {
+        color: #555; }
+    main .category {
+      padding-top: 4.5vw;
+      padding-bottom: 2.5vw; }
+    main .en, main .jp, main .date {
+      padding-right: 1vmin;
+      padding-left: 1vmin; }
+    main .article_title .jp {
+      padding-bottom: 1vw; } }
+main:hover ul {
+  background-color: #1a1a1a; }
+  main:hover ul a {
+    color: white; }
+main ul:hover {
+  background-color: #fff; }
+  main ul:hover a {
+    color: #555; }
+
+/*# sourceMappingURL=index.css.map */

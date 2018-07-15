@@ -1,0 +1,36 @@
+doctype
+- var hierarchy = '../../../' 
+include _mixin.pug
+include _titles.pug
+
+block var_article
+
+html(lang="jp")
+  head 
+      include _head.pug
+      +css_base_link(hierarchy)
+      +css_menu_link(hierarchy)
+
+      block article_detail_css
+      //- +css_article_detail_link(hierarchy)
+      
+  body
+      main(id=main_id class="article")
+          +site_title(hierarchy)
+          h2.category #{category}
+          h1.article_title
+              .en !{en}
+              .jp !{jp}
+              .date !{date}
+
+          block article_detail
+
+          include _menu.pug
+  
+
+//-
+  script(src=hierarchy+"js/minimasonry.min.js")  
+  script(src=hierarchy+"js/macy.min.js")  
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/muuri/0.5.4/muuri.min.js")
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.3.1/web-animations.min.js")
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js")

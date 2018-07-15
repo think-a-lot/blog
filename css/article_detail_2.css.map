@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGA,oCAA4C;EAC1C,MAAM,EAAE,KAAK;AAEf,CAAC;EACC,KAAK,EAAE,OAAO",
+"sources": ["article_detail_2.sass"],
+"names": [],
+"file": "article_detail_2.css"
+}

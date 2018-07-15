@@ -1,0 +1,49 @@
+//# title
+mixin site_title(hierarchy)
+    .site_title: a(href=hierarchy+"index.html") think a lot
+
+
+//# css
+mixin css_base_link(hierarchy)
+    link(rel="stylesheet" href=hierarchy+"css/base.css")
+mixin css_menu_link(hierarchy)
+    link(rel="stylesheet" href=hierarchy+"css/menu.css")
+mixin css_index_link(hierarchy)
+    link(rel="stylesheet" href=hierarchy+"css/index.css")
+
+//## css_article_detail
+mixin css_article_detail_link(hierarchy)
+    link(rel="stylesheet" href=hierarchy+"css/article_detail.css")
+mixin css_article_detail_2_link(hierarchy)
+    link(rel="stylesheet" href=hierarchy+"css/article_detail_2.css")
+
+
+//# jquery
+mixin jquery_link
+  script(src=hierarchy+"js/jquery-3.3.1.min.js")
+  //script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+
+
+//# js
+mixin js_origin_scripts_link
+    script(src=hierarchy+"js/origin_scripts.js")
+//## js - muuri
+mixin js_web_animations_link
+  script(src=hierarchy+"js/web-animations.min.js")
+  //script(src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.3.1/web-animations-next-lite.min.js")
+mixin js_hammer_link
+  script(src=hierarchy+"js/hammer.min.js")
+  //script(src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js")
+mixin js_muuri_link
+  script(src=hierarchy+"js/muuri.js")
+  //script(src="https://cdnjs.cloudflare.com/ajax/libs/muuri/0.5.4/muuri.min.js")
+mixin js_muuri_script_1_link
+  script(src=hierarchy+"js/muuri_script_1.js")
+//-mixin js_muuri_script_2_link
+  script(src=hierarchy+"js/muuri_script_2.js")
+//-mixin js_muuri_script_3_link
+  script(src=hierarchy+"js/muuri_script_3.js")
+mixin js_imagesloaded_link
+  //script(src=hierarchy+"js/imagesloaded.pkgd.min.js")
+  script(src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js")
+  

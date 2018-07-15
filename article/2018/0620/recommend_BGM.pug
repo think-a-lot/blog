@@ -1,0 +1,146 @@
+extends ../../../_layout.pug
+
+block var_article
+    - var main_id  = 'id20180620_v2'
+    - var category = 'music - youtube'
+    - var article_keywords = 'BGM,Recommend,Youtube,Select'
+    - var article_description = 'Carefully Selected Recommend Youtube BGM / 厳選オススメBGM♪'
+   
+    //- .article_title
+    - var en  = 'BGM<br>carefully selected recommend'
+    - var jp  = '厳選オススメBGM♪'
+    - var date = '2018.06.20'
+
+block article_detail_css
+    +css_article_detail_link(hierarchy)  
+
+block article_detail
+  article.detail
+    //-h3 Stylish / オシャレ
+    //-h3 cheerful / 陽気
+    //-h3 Relax / リラックス・まったり・ノンビリ・ゆったり
+    //-h3 Chillout・Concentration・Focus・Mind・Study / 集中・勉強  
+    //-h3 Moist・Rain・Gloss・Sexy / しっとり・雨・艶・セクシー
+    //-h3 Sleep・Silent / 睡眠・静か
+    //-h3 Yoko Kanno / 菅野よう子 
+    
+    //-#labels 
+      label(for="label_all") 
+        input(type="checkbox" class="btn active" id="label_all" value="all" data-filter_id="ALL")
+        span.label_text ALL
+      label(for="label1") 
+        input(type="checkbox" class="btn" id="label1" value="Chillout" data-filter_id="Chillout")
+        span.label_text Chillout
+      label(for="label2")
+        input(type="checkbox" class="btn" id="label2" value="Jazz" data-filter_id="Jazz")
+        span.label_text Jazz
+      label(for="label3")
+        input(type="checkbox" class="btn" id="label3" value="Relax" data-filter_id="Relax")
+        span.label_text Relax
+      label(for="label4")
+        input(type="checkbox" class="btn" id="label4" value="Moist" data-filter_id="Moist")
+        span.label_text Moist
+      label(for="label5")
+        input(type="checkbox" class="btn" id="label5" value="Cool" data-filter_id="Cool")
+        span.label_text Cool
+      label(for="label6")
+        input(type="checkbox" class="btn" id="label6" value="Cheerful" data-filter_id="Cheerful")
+        span.label_text Cheerful
+      label(for="label7")
+        input(type="checkbox" class="btn" id="label7" value="Chillout" data-filter_id="Focus")
+        span.label_text Focus
+            
+    #buttons 
+      button(class="btn active" id="ALL" value="ALL" data-filter_id="ALL") ALL
+      button(class="btn" id="Chillout" value="Chillout" data-filter_id="Chillout") Chillout
+      button(class="btn" id="Jazz" value="Jazz" data-filter_id="Jazz") Jazz
+      button(class="btn" id="Relax" value="Relax" data-filter_id="Relax") Relax
+      button(class="btn" id="Moist" value="Moist" data-filter_id="Moist") Moist
+      button(class="btn" id="Cool" value="Cool" data-filter_id="Cool") Cool
+      button(class="btn" id="Cheerful" value="Cheerful" data-filter_id="Cheerful") Cheerful
+      button(class="btn" id="Chillout" value="Chillout" data-filter_id="Focus") Focus
+    
+    ul#contents
+      li.Chillout
+        a(href="https://www.youtube.com/watch?v=unDx0IufPgQ" target="_blank")
+          img(src="img/unDx0IufPgQ.png" alt="Youtube - 'ZEN II' Oriental Chillstep Mix [1 Hour of Chill Music] チルバイブ")
+          div.time: span 56:18
+          
+      li.Chillout
+        a(href="https://www.youtube.com/watch?v=sO3gX2UcWtg" target="_blank")
+          img(src="img/sO3gX2UcWtg.png" alt="Youtube - Beautiful evening | lofi hip hop | Chillhop, Jazzhop, Chillout [Study/Sleep/Game]")
+          div.time: span 1:06:06
+
+      li.Chillout
+        a(href="https://www.youtube.com/user/stayseemusic" target="_blank")
+          img(src="img/stayseemusic.png" alt="Youtube - Stay See")
+          div.time: span channel
+      
+      li.Cheerful
+        a(href="https://www.youtube.com/watch?v=h6f9XTxjenM" target="_blank")
+          img(src="img/h6f9XTxjenM.png" alt="Youtube - Nujabes [Tributes Mix]")
+          div.time: span 2:00:00
+      
+      li.Jazz
+        a(href="https://www.youtube.com/watch?v=UKQqR-uOAS4&list=RDUKQqR-uOAS4" target="_blank")
+          img(src="img/UKQqR-uOAS4.png" alt="Youtube - ミックスリスト - Sakamichi no Apollon OST")
+          div.time: span list
+      
+      li.Relax
+        a(href="https://www.youtube.com/watch?v=dY2ojKpW8Z0" target="_blank")
+          img(src="img/dY2ojKpW8Z0.png" alt="Youtube - Cowboy Bebop OST - Waltz for Zizi (1 hour loop)")
+          div.time: span 52:44    
+      
+      li.Chillout
+        a(href="https://www.youtube.com/watch?v=-FlxM_0S2lA" target="_blank")
+          img(src="img/FlxM_0S2lA.gif" alt="Youtube - Lofi hip hop mix - Beats to Relax/Study to [2018]")
+          div.time: span 2:00:00
+          
+      li.Chillout 
+        a(href="https://www.youtube.com/watch?v=-FlxM_0S2lA" target="_blank")
+          img(src="img/FV0DZhpWy2k.png" alt="Youtube - lo-fi study & sleep tape [lo-fi hip hop / jazzhop / chillhop mix] (Study/Sleep/Relax music) 2017")
+          div.time: span 2:00:34
+          
+      li.Moist 
+        a(href="https://www.youtube.com/watch?v=PfRx4MZ0jLc" target="_blank")
+          img.crop(src="img/PfRx4MZ0jLc.gif" alt="Youtube - Cowboy Bebop OST - Goodnight Julia (Extended)")
+          div.time: span 14:37
+          
+      li.Moist.Cool 
+        a(href="https://www.youtube.com/watch?v=5vels5pZkoc" target="_blank")
+          img(src="img/5vels5pZkoc.gif" alt="Youtube - 【HD】 探偵 神宮寺三郎 KIND OF BLUE OP (Tantei Jinguji Saburo)")
+          div.time: span 2:37
+          
+      li.Cool
+        a(href="https://www.youtube.com/watch?v=5l4gjbQWwr0" target="_blank")
+          img(src="img/5l4gjbQWwr0.png" alt="Youtube - 探偵神宮寺三郎 灯火が消えぬ間に BGM")
+          div.time: span 56:47
+          
+      li.Moist 
+        a(href="https://www.youtube.com/watch?v=R4FFC5vIWKc" target="_blank")
+          img(src="img/R4FFC5vIWKc.gif" alt="Youtube - Memory + Rainymood (Cowboy Bebop)")
+          div.time: span 3:38
+          
+      li.Cool
+        a(href="https://www.youtube.com/watch?v=mZ2fq-f-opE" target="_blank")
+          img(src="img/mZ2fq-f-opE.png" alt="Youtube - Best of Zankyou no Terror 『残響のテロル』 OST")
+          div.time: span 39:59
+          
+      li.Jazz 
+        a(href="https://www.youtube.com/watch?v=7q3Kw7BCaj0" target="_blank")
+          img(src="img/7q3Kw7BCaj0.png" alt="Youtube - 薫と千太郎の文化祭")
+          div.time: span 3:36 
+          
+      li.Focus 
+        a(href="https://www.youtube.com/watch?v=No_RILc6RHA" target="_blank")
+          img(src="img/No_RILc6RHA.png" alt="Youtube - 『涼宮ハルヒの憂鬱』BGM　長門の告白")
+          div.time: span 3:36 
+          
+      li.Focus 
+        a(href="https://www.youtube.com/watch?v=tLUegKLP" target="_blank")
+          img(src="img/tLUegKLP.png" alt="Youtube - 『涼宮ハルヒの憂鬱』BGM　ある雨の日")
+          div.time: span 1:44        
+
+    +jquery_link
+    +js_origin_scripts_link
+ 

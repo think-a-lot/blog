@@ -1,0 +1,23 @@
+extends ../../../_layout.pug
+
+block var_article 
+    - var main_id  = 'id20180506'
+    - var category = 'design - web'
+
+    //- .article_title
+    - var en  = 'browser screen resolution<br>world wide<br>stats/share (%)'
+    - var jp  = '画面解像度 世界利用割合統計率'
+    - var date = '2018.05.06'
+
+block article_detail_css
+    +css_article_detail_link(hierarchy)  
+
+block article_detail
+    article.detail
+        img.img1(src="img/browser_resolution_share_2017.04-2018.04_main_dark.png" alt="browser_resolution_share_2017.04-2018.04_main_dark.png")
+        
+        img.img2(src="img/browser_resolution_share_2017.04-2018.04_sub_dark.png" alt="browser_resolution_share_2017.04-2018.04_sub_dark.png")
+        
+        q   
+            | from 
+            a(href="http://gs.statcounter.com/" target="_blank") StatCounter Global Stats

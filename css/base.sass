@@ -1,0 +1,95 @@
+@charset "UTF-8"
+
+@font-face
+  font-family: 'Noto Sans Japanese'
+  font-style: normal
+  font-weight: 100
+  src: url("../font/NotoSansCJKjp-Thin.woff") format("woff"), url("../font/NotoSansCJKjp-Thin.ttf") format("truetype")
+  /* Safari, Android, iOS
+
+@font-face
+  font-family: 'Noto Sans Japanese'
+  font-style: normal
+  font-weight: 200
+  src: url("../font/NotoSansCJKjp-Light.woff") format("woff"), url("../font/NotoSansCJKjp-Light.ttf") format("truetype")
+
+@font-face
+  font-family: 'Noto Sans Japanese'
+  font-style: normal
+  font-weight: 300
+  src: url("../font/NotoSansCJKjp-DemiLight.woff") format("woff"), url("../font/NotoSansCJKjp-DemiLight.ttf") format("truetype")
+
+body
+  font: 100 0.7vw "Noto Sans Japanese"
+  color: #ddd
+  background: linear-gradient(145deg, #1a1a1a, #181818)
+  letter-spacing: 0.06em
+  a
+    line-height: 1.5em
+
+.site_title
+  font-size: 3.5em
+  letter-spacing: 0.9em
+  text-align: center
+  padding: 5em 0 4em
+  a
+    text-decoration: none
+    color: white
+  @media screen and (min-width: 970px)
+    transform: rotate(-45deg)
+    position: absolute
+    letter-spacing: 1em
+    text-align: center
+    padding: 12vmin 0 8vmin
+    font-size: 1vw
+    top: 1vw
+    left: -2.1vw
+    padding: 5vw 0 1vw
+    a
+      text-decoration: none
+      color: white
+
+.category
+  font-style: italic
+  font-size: 3em
+  letter-spacing: 0.3em
+  text-align: center
+  padding: 0 0 3em 0
+  @media screen and (min-width: 970px)  
+    font-size: 1.5em
+    padding-top: 10vmin
+    padding-bottom: 5vmin
+
+.article_title
+  text-align: center
+  line-height: 5.2em
+  padding-left: 0
+  .en
+    font-weight: 200
+    line-height: 1.5em
+    font-size: 5.3em
+    padding-bottom: 0.3em
+  .jp
+    font-size: 3.7em
+    padding-bottom: 2.5em
+  .date
+    font-style: italic
+    padding-bottom: 2em
+    font-size: 4em
+  @media screen and (min-width: 970px)
+    .en
+      font-size: 2.7em
+      padding-bottom: 1em
+    .jp
+      font-size: 1.7em
+      padding-bottom: 2.5vmin
+      line-height: 1.5em
+    .date
+      font-size: 1.7em
+
+article.detail
+  text-align: center
+  padding-bottom: 15vh
+  
+
+/*# sourceMappingURL=base_scss.css.map

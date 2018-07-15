@@ -1,0 +1,177 @@
+@charset "UTF-8";
+/* drawer menu */
+/* btn size */
+menu {
+  position: fixed;
+  bottom: 17px;
+  /* estimate, btn position */
+  left: 13px;
+  /* estimate, btn position */ }
+
+label#menu-btn {
+  width: 20px;
+  /* touch area size */
+  height: 25px;
+  /* touch area size */
+  padding: 10px;
+  border-radius: 5px;
+  display: block;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  opacity: 0.6; }
+  label#menu-btn span {
+    position: absolute;
+    left: 9px;
+    /* fix, btn line position */
+    height: 1px;
+    width: 20px;
+    /* fix, btn line width */
+    background: #888;
+    display: block;
+    content: "";
+    cursor: pointer;
+    /* btn line position */
+    /* btn line position */
+    /* 表btnサイズ end */ }
+    label#menu-btn span:nth-of-type(1) {
+      bottom: 25px;
+      /* fix, btn line position */ }
+    label#menu-btn span:nth-of-type(2) {
+      bottom: 16px;
+      /* fix, btn line position */ }
+
+#menu-background {
+  background-color: #777;
+  display: none;
+  /* 通常 非表示 */
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: all 0.3s linear 0s;
+  /*0.3s はアニメーションにかかる時間 */ }
+
+#menu-cb {
+  display: none;
+  /*チェックボックス本体は消しておく */
+  /* menu animation */
+  /* when it opened */ }
+  #menu-cb:checked ~ #ham-menu {
+    /* menu 開閉左右選択, #ham-menu width & #menu-cb:checked ~ #ham-menu translate(~vmin)と合わせる */
+    transform: translate(80vw); }
+  #menu-cb:checked ~ #menu-background {
+    display: block;
+    opacity: 0.5;
+    z-index: 1;
+    /* チェック時 表示 */ }
+  #menu-cb:checked ~ label#menu-btn {
+    z-index: 4; }
+    #menu-cb:checked ~ label#menu-btn span {
+      z-index: 3; }
+      #menu-cb:checked ~ label#menu-btn span:nth-of-type(1) {
+        transform: translate3d(0px, 5px, 0px) rotate(-45deg); }
+      #menu-cb:checked ~ label#menu-btn span:nth-of-type(2) {
+        transform: translate3d(0px, -4px, 0px) rotate(45deg); }
+
+#ham-menu {
+  background: linear-gradient(90deg, #1a1a1a, #181818);
+  box-sizing: border-box;
+  height: 100%;
+  padding: 6vmin 9vmin;
+  /* menu inside 左右上下 space */
+  position: fixed;
+  left: -80vw;
+  /* menu 開閉左右選択, #ham-menu width & #menu-cb:checked ~ #ham-menu translate(~vmin)と合わせる */
+  top: 0;
+  transition: transform 0.3s linear 0s;
+  /*0.3s はアニメーションにかかる時間 */
+  width: 80vw;
+  /* menu width */
+  z-index: 1; }
+  #ham-menu ul {
+    overflow-y: scroll;
+    height: 100%;
+    width: 108%; }
+  #ham-menu li {
+    padding: 2.5vmin 0;
+    font-size: 4em;
+    width: 63vw;
+    color: #ddd; }
+    #ham-menu li .menu_date {
+      font-size: 0.9em;
+      font-style: italic; }
+    #ham-menu li .menu_category {
+      font-size: 0.9em;
+      font-style: italic;
+      position: relative;
+      left: 1em;
+      text-align: center; }
+    #ham-menu li:last-child {
+      margin-bottom: 10vw; }
+  #ham-menu a {
+    color: #fff;
+    text-decoration: none; }
+  #ham-menu .menu_en, #ham-menu .menu_jp {
+    position: relative;
+    left: 1em; }
+  #ham-menu .menu_en {
+    font-size: 1.1em;
+    font-weight: 200; }
+  #ham-menu .menu_jp {
+    font-size: 0.9em;
+    font-weight: 100; }
+  #ham-menu .top {
+    font-style: italic;
+    margin-bottom: 2vmin; }
+
+/* drawer menu - PC */
+@media screen and (min-width: 970px) {
+  #ham-menu {
+    left: -60vw;
+    width: 60vw; }
+    #ham-menu li {
+      font-size: 1.5vw;
+      padding: 0;
+      padding: 0.6em 0;
+      left: -60vw;
+      width: 52vw; }
+      #ham-menu li .menu_en {
+        position: relative;
+        left: 1em;
+        font-weight: 200;
+        font-size: 1.1em; }
+    #ham-menu .top {
+      font-size: 1.5vw; }
+
+  label#menu-btn {
+    width: 9vmin;
+    height: 9vmin;
+    bottom: -1vmin; }
+    label#menu-btn .btn_position {
+      position: absolute;
+      bottom: 1.5vh;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+      label#menu-btn .btn_position span {
+        width: 25px;
+        left: 1.8em; }
+        label#menu-btn .btn_position span:nth-of-type(1) {
+          bottom: 34px; }
+        label#menu-btn .btn_position span:nth-of-type(2) {
+          bottom: 25px; }
+
+  #menu-cb {
+    /* menu animation */ }
+    #menu-cb:checked ~ #ham-menu {
+      /* menu 開閉左右選択, #ham-menu width & #menu-cb:checked ~ #ham-menu translate(~vmin)と合わせる */
+      transform: translate(60vw); }
+    #menu-cb:checked ~ label#menu-btn span:nth-of-type(1) {
+      transform: translate3d(0, 4px, 0) rotate(-45deg); }
+    #menu-cb:checked ~ label#menu-btn span:nth-of-type(2) {
+      transform: translate3d(0, -5px, 0) rotate(45deg); } }
+
+/*# sourceMappingURL=menu.css.map */

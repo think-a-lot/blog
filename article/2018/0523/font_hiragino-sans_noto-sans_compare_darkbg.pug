@@ -1,0 +1,19 @@
+extends ../../../_layout.pug
+
+block var_article
+    - var main_id  = 'id20180523_01'
+    - var category = 'design - web - font'
+    - var article_keywords = 'font,フォント,compare,比較,contrast,対比,free,無料'
+    - var article_description = 'フリーでありながら超高品質なフォント NotoSans と、Macユーザーに大人気の Hiragino Sans フォントの、個人的に大好きな細いウェイトを単純に並べて比べてみました。'
+
+    //- .article_title
+    - var en  = 'Hiragino Sans<br>&<br>Noto Sans'
+    - var jp  = '( Dark Theme Ver. )'
+    - var date = '2018.05.23'
+
+block article_detail_css
+    +css_article_detail_link(hierarchy)  
+
+block article_detail
+    article.detail
+        img(src="img/font_contrast_NotoSans_HiraginoSans_darkbg.png" alt="font_contrast_NotoSans_HiraginoSans_darkbg.png")

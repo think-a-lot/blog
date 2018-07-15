@@ -1,0 +1,140 @@
+@charset "UTF-8";
+/* PC・SP */
+main:hover ul {
+  background-color: #1a1a1a;
+  -webkit-tap-highlight-color: #1a1a1a; }
+  main:hover ul a {
+    color: white;
+    -webkit-tap-highlight-color: white; }
+main a {
+  color: #ddd;
+  text-decoration: none;
+  display: block;
+  height: 100%; }
+main ul {
+  position: relative; }
+  main ul:hover {
+    background-color: white;
+    -webkit-tap-highlight-color: white; }
+    main ul:hover a {
+      color: #555;
+      -webkit-tap-highlight-color: #555; }
+  main ul::before, main ul::after {
+    content: '';
+    width: 20px;
+    height: 30px;
+    position: absolute;
+    display: inline-block;
+    width: 5vw;
+    height: 5vw; }
+  main ul::before {
+    top: 0;
+    left: 0; }
+  main ul::after {
+    bottom: 0;
+    right: 0; }
+  main ul li {
+    list-style: none;
+    display: block;
+    height: 100%; }
+    main ul li::before, main ul li::after {
+      content: '';
+      position: absolute;
+      width: 5vw;
+      height: 5vw; }
+
+/* SP */
+@media screen and (max-width: 969px) {
+  main {
+    display: grid;
+    grid-template-columns: 45vw 45vw;
+    grid-template-rows: 45vw 45vw;
+    align-content: start;
+    justify-content: center;
+    font-size: 0.58vw;
+    margin-bottom: 30em; }
+    main ul::before {
+      border-top: solid 1px #ffffff15;
+      border-left: solid 1px #ffffff15; }
+    main ul::after {
+      border-right: solid 1px #ffffff15;
+      border-bottom: solid 1px #ffffff15; }
+    main ul:nth-of-type(odd) li::before {
+      border-left: solid 1px #ffffff15;
+      top: 40vw; }
+    main ul:nth-of-type(2n) li::before {
+      border-left: solid 1px #ffffff15;
+      top: 0;
+      right: -5vw; }
+    main ul:nth-of-type(2n+4)::before {
+      top: -1px;
+      left: -1px; }
+    main ul:nth-of-type(1) li::after, main ul:nth-of-type(2) li::after {
+      border-top: solid 1px #ffffff15;
+      top: 0;
+      right: 0; }
+    main .category {
+      padding-top: 5.5vw;
+      padding-bottom: 5vw; }
+    main .article_title .en {
+      padding-bottom: 3vw;
+      font-weight: 200; }
+    main .article_title .jp {
+      padding-bottom: 5vw; } }
+/* SP */
+@media screen and (max-width: 969px) {
+  ul:nth-of-type(4n+1), ul:nth-of-type(4n) {
+    background-color: white;
+    -webkit-tap-highlight-color: white; }
+    ul:nth-of-type(4n+1) a, ul:nth-of-type(4n) a {
+      color: #555;
+      -webkit-tap-highlight-color: #555; }
+    ul:nth-of-type(4n+1):hover, ul:nth-of-type(4n):hover {
+      background-color: #1a1a1a;
+      -webkit-tap-highlight-color: #1a1a1a; }
+      ul:nth-of-type(4n+1):hover a, ul:nth-of-type(4n):hover a {
+        color: white;
+        -webkit-tap-highlight-color: white; } }
+/* PC */
+@media screen and (min-width: 970px) {
+  main {
+    display: grid;
+    grid-template-columns: 26vw 26vw 26vw;
+    grid-template-rows: 26vw 26vw;
+    align-content: start;
+    padding: 14vh 0vw 16vh 12vw;
+    font-size: 0.58vw;
+    height: 86vh; }
+    main ul::before {
+      border-top: solid 1px #ffffff22;
+      border-left: solid 1px #ffffff22; }
+    main ul::after {
+      border-right: solid 1px #ffffff22;
+      border-bottom: solid 1px #ffffff22; }
+    main ul:nth-of-type(1) li::before, main ul:nth-of-type(4n) li::before {
+      border-left: solid 1px #ffffff22;
+      top: 21vw; }
+    main ul:nth-of-type(3n) li::before {
+      border-left: solid 1px #ffffff22;
+      top: 0;
+      right: -5vw; }
+    main ul:nth-of-type(1) li::after, main ul:nth-of-type(2) li::after, main ul:nth-of-type(3) li::after {
+      border-top: solid 1px #ffffff22;
+      top: 0;
+      right: 0; }
+    main ul:nth-of-type(2n+1) {
+      background-color: white;
+      -webkit-tap-highlight-color: white; }
+      main ul:nth-of-type(2n+1) a {
+        color: #555;
+        -webkit-tap-highlight-color: #555; }
+    main .category {
+      padding-top: 4.5vw;
+      padding-bottom: 2.5vw; }
+    main .en, main .jp, main .date {
+      padding-right: 1vmin;
+      padding-left: 1vmin; }
+    main .article_title .jp {
+      padding-bottom: 1vw; } }
+
+/*# sourceMappingURL=index_v1.css.map */

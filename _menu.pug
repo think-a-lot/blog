@@ -1,0 +1,22 @@
+menu
+
+    input#menu-cb(type="checkbox" value="off")
+    label#menu-btn(for="menu-cb")
+        div.btn_position
+            span
+            span
+    label#menu-background(for="menu-cb")
+    div#ham-menu
+        ul
+            li.top: a(href=hierarchy+"index.html") top
+            
+            each title in titles
+                
+                - var url = hierarchy+"article/"+title.year+"/"+title.month+title.day+"/"+title.file_name
+                - var menu_title = title.year+"."+title.month+"."+title.day+"<br>"+title.category2+" - "+title.en2+"<br>"+title.jp
+                
+                li: a(href=url) 
+                    .menu_date !{title.year}.!{title.month}.!{title.day} 
+                        span.menu_category !{title.category2}  
+                    .menu_en !{title.en2}
+                    .menu_jp 　!{title.jp2}
